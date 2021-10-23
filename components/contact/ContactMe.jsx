@@ -8,8 +8,7 @@ function ContactMe() {
         <Heading mb={3}>Hubungi Saya</Heading>
 
         <Text color="gray.500" mb={5} fontSize={{ base: "lg", md: "xl" }}>
-          Jika ada keperluan, saya dengan senang hati untuk dihubungi kapanpun
-          😎.
+          Saya dengan senang hati untuk dihubungi kapanpun 😎.
         </Text>
 
         <VStack

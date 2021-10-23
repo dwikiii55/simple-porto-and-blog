@@ -55,8 +55,8 @@ function Card({ judul, contents }) {
         {judul}{" "}
       </Text>
       <Wrap>
-        {contents.map((content) => (
-          <WrapItem>
+        {contents.map((content, index) => (
+          <WrapItem key={index}>
             <Tag bg={content.color}>{content.nama}</Tag>
           </WrapItem>
         ))}

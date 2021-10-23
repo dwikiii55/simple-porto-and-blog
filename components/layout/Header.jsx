@@ -9,6 +9,7 @@ import {
   useColorModeValue,
   useDisclosure,
   Spacer,
+  Text,
 } from "@chakra-ui/react";
 import { useRouter } from "next/dist/client/router";
 import AppContainer from "../container/AppContainer";
@@ -30,7 +31,7 @@ const NavLink = ({ children }) => {
         bg: useColorModeValue("gray.200", "gray.700"),
       }}
     >
-      {children}
+      <Text fontSize="sm">{children}</Text>
     </Link>
   );
 };

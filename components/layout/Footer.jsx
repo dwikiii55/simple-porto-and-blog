@@ -1,13 +1,13 @@
 import {
   Box,
   chakra,
-  Container,
   Stack,
   Text,
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 import AppContainer from "../container/AppContainer";
 
 const SocialButton = ({ children, label, href }) => {
@@ -48,17 +48,34 @@ export default function Footer() {
           align={{ base: "center", md: "center" }}
         >
           <Text fontSize="sm" color="gray.400">
-            © 2021 Dwiki Krisna Saputra.
+            © 2021{" "}
+            <Text as="span" fontSize="sm" color="#46CDCF">
+              dwiki.tech
+            </Text>
           </Text>
           <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"#"}>
-              <FaTwitter />
+            <SocialButton
+              label={"Github"}
+              href={"https://github.com/dwikiii55"}
+            >
+              <FaGithub />
             </SocialButton>
-            <SocialButton label={"YouTube"} href={"#"}>
-              <FaYoutube />
+            <SocialButton
+              label={"Whatsapp"}
+              href={
+                "https://api.whatsapp.com/send/?phone=6289606757971&text&app_absent=0"
+              }
+            >
+              <FaWhatsapp />
             </SocialButton>
-            <SocialButton label={"Instagram"} href={"#"}>
+            <SocialButton
+              label={"Instagram"}
+              href={"https://www.instagram.com/dwiki.krisna/"}
+            >
               <FaInstagram />
+            </SocialButton>
+            <SocialButton label={"Email"} href={"mailto:dwiki1968@gmail.com"}>
+              <FiMail />
             </SocialButton>
           </Stack>
         </Box>

@@ -1,9 +1,8 @@
-import { Box, Center, Heading, Text } from "@chakra-ui/layout";
+import { Box } from "@chakra-ui/layout";
 import React from "react";
 import Hero from "../components/landing/Hero";
-import AppLayout from "../components/layout/AppLayout";
 import MySkill from "../components/landing/MySkill";
-import ContactMe from "../components/contact/ContactMe";
+import AppLayout from "../components/layout/AppLayout";
 
 const Home = () => {
   return (
@@ -13,8 +12,6 @@ const Home = () => {
         <Hero />
         <Box m={10} />
         <MySkill />
-        <Box m={10} />
-        <ContactMe />
         <Box m={10} />
       </AppLayout>
     </div>
