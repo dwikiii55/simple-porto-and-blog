@@ -49,7 +49,7 @@ export default function Footer() {
         >
           <Text fontSize="sm" color="gray.400">
             © 2021{" "}
-            <Text as="span" fontSize="sm" color="#46CDCF">
+            <Text fontWeight="semibold" as="span" fontSize="sm" color="#46CDCF">
               dwiki.tech
             </Text>
           </Text>

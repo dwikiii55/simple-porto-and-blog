@@ -76,7 +76,7 @@ const ProjectComp = () => {
         🚀.
       </Text>
       <Box m={5} />
-      <SimpleGrid columns={{ base: 1, sm: 1, md: 2 }} spacing={5}>
+      <SimpleGrid columns={{ base: 1, sm: 2, md: 2 }} spacing={5}>
         {projectLists.map((list, index) => (
           <CardProject
             key={index}

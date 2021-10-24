@@ -52,10 +52,9 @@ export default function Header() {
               onClick={isOpen ? onClose : onOpen}
               mr={10}
             />
-
-            <Logo />
-
-            <Spacer />
+            <Box>
+              <Logo />
+            </Box>
 
             <HStack spacing={8}>
               <HStack

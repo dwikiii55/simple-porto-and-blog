@@ -1,17 +1,14 @@
-import React from "react";
 import {
-  chakra,
   Box,
-  useColorModeValue,
-  Flex,
   Button,
+  chakra,
+  Flex,
   HStack,
-  WrapItem,
   Text,
+  useColorModeValue,
 } from "@chakra-ui/react";
-import { EmailIcon } from "@chakra-ui/icons";
-import HeroImg from "../../public/Hero.png";
-import Image from "next/image";
+import React from "react";
+import Link from "next/link";
 import { FiMail } from "react-icons/fi";
 
 const Hero = () => {
@@ -53,27 +50,24 @@ const Hero = () => {
           .
         </chakra.h1>
         <chakra.p mb={5} color="gray.500" fontSize={{ base: "lg", md: "xl" }}>
-          Merupakan seorang antusias teknologi, dan sekarang saya sedang
-          menekuni bidang per-web development-an 👩‍🚀.
+          Seorang antusias teknologi dan sekarang saya sedang menekuni bidang
+          per-web development-an 👩‍🚀.
         </chakra.p>
         <HStack>
           {" "}
-          <Button
-            borderRadius="md"
-            // colorScheme="twitter"
-            variant="outline"
-            color="#3D84A8"
-            leftIcon={<FiMail />}
-          >
-            Contact Me!
-          </Button>
+          <Link _hover={{}} href="/Contact">
+            <Button
+              borderRadius="md"
+              // colorScheme="twitter"
+              variant="outline"
+              color="#3D84A8"
+              leftIcon={<FiMail />}
+            >
+              Contact Me!
+            </Button>
+          </Link>
         </HStack>
       </Box>
-      {/* <Box m={5} /> */}
-
-      {/* <Box maxW="300px">
-        <Image src={HeroImg} alt="Picture of the author" />
-      </Box> */}
     </Flex>
   );
 };

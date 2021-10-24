@@ -46,7 +46,7 @@ function Card({ judul, contents }) {
   return (
     <VStack
       _hover={{ position: "relative", top: "-3px" }}
-      borderWidth="1px"
+      borderWidth="2px"
       borderRadius="2xl"
       p={4}
       alignItems="flex-start"
