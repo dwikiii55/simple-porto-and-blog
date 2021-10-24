@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/layout";
 import React from "react";
-import AppLayout from "../components/layout/AppLayout";
-import ProjectComp from "../components/project/ProjectComp";
+import AppLayout from "../../components/layout/AppLayout";
+import ProjectComp from "../../components/project/ProjectComp";
 
 function Project() {
   return (
