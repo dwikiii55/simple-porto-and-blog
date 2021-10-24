@@ -9,6 +9,7 @@ const Home = () => {
     <div>
       <AppLayout>
         <Box m={10} />
+
         <Hero />
         <Box m={10} />
         <MySkill />
