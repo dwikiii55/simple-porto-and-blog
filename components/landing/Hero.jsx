@@ -30,7 +30,7 @@ const Hero = () => {
           lineHeight="shorter"
           color={useColorModeValue("gray.900", "white")}
         >
-          I'm{" "}
+          I am{" "}
           <Text
             as={"span"}
             position={"relative"}
@@ -50,7 +50,7 @@ const Hero = () => {
           .
         </chakra.h1>
         <chakra.p mb={5} color="gray.500" fontSize={{ base: "lg", md: "xl" }}>
-          A tech enthusiast and now I'm focused on web development 👩‍🚀.
+          A tech enthusiast and now I am focused on web development 👩‍🚀.
         </chakra.p>
         <HStack>
           <Link _hover={{}} href="/contact" passHref>
