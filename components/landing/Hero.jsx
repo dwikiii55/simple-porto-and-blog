@@ -21,7 +21,7 @@ const Hero = () => {
           lineHeight="shorter"
           color={useColorModeValue("gray.900", "white")}
         >
-          Hallo! 👋
+          Halo! 👋
         </chakra.h1>
         <chakra.h1
           mb={3}
@@ -55,7 +55,7 @@ const Hero = () => {
         </chakra.p>
         <HStack>
           {" "}
-          <Link _hover={{}} href="/Contact">
+          <Link _hover={{}} href="/contact">
             <Button
               borderRadius="md"
               // colorScheme="twitter"

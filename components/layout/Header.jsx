@@ -6,23 +6,26 @@ import {
   IconButton,
   Link,
   Stack,
+  Text,
   useColorModeValue,
   useDisclosure,
-  Spacer,
-  Text,
 } from "@chakra-ui/react";
 import { useRouter } from "next/dist/client/router";
 import AppContainer from "../container/AppContainer";
 import ColorModeToggle from "../ui/ColorModeToggle";
 import Logo from "../ui/Logo";
 
-const Links = ["Contact", "Projects", "Blog"];
+const linkItems = [
+  { nama: "Projects", link: "/projects" },
+  { nama: "Contact", link: "/contact" },
+  { nama: "Blog", link: "/blog" },
+];
 
-const NavLink = ({ children }) => {
+const NavLink = ({ children, link }) => {
   const router = useRouter();
   return (
     <Link
-      onClick={() => router.push(`/${children}`)}
+      onClick={() => router.push(link)}
       px={2}
       py={1}
       rounded={"md"}
@@ -45,7 +48,7 @@ export default function Header() {
         <AppContainer>
           <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
             <IconButton
-              size={"md"}
+              size={"sm"}
               icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
               aria-label={"Open Menu"}
               display={{ md: "none" }}
@@ -63,8 +66,10 @@ export default function Header() {
                 display={{ base: "none", md: "flex" }}
                 alignItems="center"
               >
-                {Links.map((link) => (
-                  <NavLink key={link}>{link}</NavLink>
+                {linkItems.map((linkItem, index) => (
+                  <NavLink link={linkItem.link} key={index}>
+                    {linkItem.nama}
+                  </NavLink>
                 ))}
               </HStack>
               <ColorModeToggle />
@@ -74,8 +79,10 @@ export default function Header() {
           {isOpen ? (
             <Box pb={4} display={{ md: "none" }}>
               <Stack as={"nav"} spacing={4}>
-                {Links.map((link) => (
-                  <NavLink key={link}>{link}</NavLink>
+                {linkItems.map((linkItem, index) => (
+                  <NavLink link={linkItem.link} key={index}>
+                    {linkItem.nama}
+                  </NavLink>
                 ))}
               </Stack>
             </Box>

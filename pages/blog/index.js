@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/layout";
 import React from "react";
-import BlogPosts from "../components/Blog/BlogPosts";
-import AppLayout from "../components/layout/AppLayout";
+import BlogPosts from "../../components/Blog/BlogPosts";
+import AppLayout from "../../components/layout/AppLayout";
 
 function Blog() {
   return (

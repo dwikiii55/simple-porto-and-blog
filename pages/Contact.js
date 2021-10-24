@@ -5,12 +5,12 @@ import AppLayout from "../components/layout/AppLayout";
 
 function Contact() {
   return (
-    <div>
+    <>
       <AppLayout>
         <Box m={10} />
         <ContactMe />
       </AppLayout>
-    </div>
+    </>
   );
 }
 

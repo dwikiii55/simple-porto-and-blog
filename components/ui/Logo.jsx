@@ -6,7 +6,7 @@ export default function Logo(props) {
   const router = useRouter();
   return (
     <Box maxW="100px" {...props}>
-      <Link onClick={() => router.push("/")}>
+      <Link onClick={() => router.push("/")} _hover={{ color: "#46CDCF" }}>
         <Text fontWeight="bold" fontSize="lg">
           dwiki.tech
         </Text>

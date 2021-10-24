@@ -1,3 +1,4 @@
+import { useColorModeValue } from "@chakra-ui/color-mode";
 import { SimpleGrid, Text, VStack, Wrap, WrapItem } from "@chakra-ui/layout";
 import { Tag } from "@chakra-ui/tag";
 import React from "react";
@@ -57,7 +58,11 @@ function Card({ judul, contents }) {
       <Wrap>
         {contents.map((content, index) => (
           <WrapItem key={index}>
-            <Tag bg={content.color}>{content.nama}</Tag>
+            <Tag bg={content.color}>
+              <Text color={useColorModeValue("gray.800", "gray.800")}>
+                {content.nama}
+              </Text>
+            </Tag>
           </WrapItem>
         ))}
       </Wrap>
