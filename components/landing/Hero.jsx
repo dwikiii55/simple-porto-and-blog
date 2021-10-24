@@ -21,7 +21,7 @@ const Hero = () => {
           lineHeight="shorter"
           color={useColorModeValue("gray.900", "white")}
         >
-          Halo! 👋
+          Hallo! 👋
         </chakra.h1>
         <chakra.h1
           mb={3}
@@ -30,7 +30,7 @@ const Hero = () => {
           lineHeight="shorter"
           color={useColorModeValue("gray.900", "white")}
         >
-          Saya{" "}
+          I'm{" "}
           <Text
             as={"span"}
             position={"relative"}
@@ -50,15 +50,12 @@ const Hero = () => {
           .
         </chakra.h1>
         <chakra.p mb={5} color="gray.500" fontSize={{ base: "lg", md: "xl" }}>
-          Seorang antusias teknologi dan sekarang saya sedang menekuni bidang
-          per-web development-an 👩‍🚀.
+          A tech enthusiast and now I'm focused on web development 👩‍🚀.
         </chakra.p>
         <HStack>
-          {" "}
-          <Link _hover={{}} href="/contact">
+          <Link _hover={{}} href="/contact" passHref>
             <Button
               borderRadius="md"
-              // colorScheme="twitter"
               variant="outline"
               color="#3D84A8"
               leftIcon={<FiMail />}

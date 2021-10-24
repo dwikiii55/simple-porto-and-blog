@@ -58,10 +58,8 @@ function Card({ judul, contents }) {
       <Wrap>
         {contents.map((content, index) => (
           <WrapItem key={index}>
-            <Tag bg={content.color}>
-              <Text color={useColorModeValue("gray.800", "gray.800")}>
-                {content.nama}
-              </Text>
+            <Tag bg={"cyan.200"}>
+              <Text color="gray.800">{content.nama}</Text>
             </Tag>
           </WrapItem>
         ))}

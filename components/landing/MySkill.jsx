@@ -9,8 +9,8 @@ const MySkill = () => {
         <Text>Familiar with </Text>
       </Heading>
       <Text color="gray.500" fontSize={{ base: "lg", md: "xl" }}>
-        Teknologi yang biasa saya gunakan dalam membangun suatu project dan
-        cukup familiar ⚙.
+        The technology that I usually use in building a project and I am
+        familiar with it.
       </Text>
       <Box m={5} />
       <CardSkill />

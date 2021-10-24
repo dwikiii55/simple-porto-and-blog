@@ -5,12 +5,12 @@ import TagArtikel from "./TagArtikel";
 
 function BlogPosts() {
   return (
-    <div>
-      <Heading mb={3}>Blog Post</Heading>
-      <Text fontSize={{ base: "lg", md: "xl" }}>
-        Berbagi merupakan esensi dari indahnya suatu ilmu 🧐.
+    <>
+      <Heading mb={3}>Blog </Heading>
+      <Text mb={5} fontSize={{ base: "lg", md: "xl" }}>
+        Sharing is beautiful ✨.
       </Text>
-      <HStack my={2}>
+      <HStack>
         <TagArtikel>Front End</TagArtikel>
         <TagArtikel>Back End</TagArtikel>
         <TagArtikel>React</TagArtikel>
@@ -18,7 +18,7 @@ function BlogPosts() {
       </HStack>
       <Box m={5} />
       <CardBlog />
-    </div>
+    </>
   );
 }
 

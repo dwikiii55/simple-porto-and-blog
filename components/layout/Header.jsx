@@ -34,7 +34,9 @@ const NavLink = ({ children, link }) => {
         bg: useColorModeValue("gray.200", "gray.700"),
       }}
     >
-      <Text fontSize="sm">{children}</Text>
+      <Text fontSize="sm" fontWeight="semibold">
+        {children}
+      </Text>
     </Link>
   );
 };

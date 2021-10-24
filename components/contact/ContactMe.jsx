@@ -2,14 +2,17 @@ import {
   Box,
   Flex,
   Heading,
+  List,
+  ListIcon,
+  ListItem,
   Spacer,
   Stack,
   Text,
   VStack,
 } from "@chakra-ui/layout";
 import React from "react";
-import { FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
+import { FaGithub, FaInstagram, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 import SocialButton from "../ui/SosialButton";
 
 const sosialMedia = [
@@ -31,10 +34,10 @@ function ContactMe() {
   return (
     <>
       <Box>
-        <Heading mb={3}>Hubungi Saya</Heading>
+        <Heading mb={3}>Contact me</Heading>
 
         <Text color="gray.500" mb={5} fontSize={{ base: "lg", md: "xl" }}>
-          Dengan senang hati untuk dihubungi kapanpun .
+          Happy to be contacted anytime.
         </Text>
 
         <Flex
@@ -42,20 +45,32 @@ function ContactMe() {
           borderWidth="2px"
           borderRadius="2xl"
           p={5}
+          _hover={{ position: "relative", top: "-3px", shadow: "md" }}
         >
           <VStack alignItems="flex-start">
             <Text fontWeight="semibold" mb={1}>
               Dwiki Krisna Saputra.
             </Text>
 
-            <Text>📞 +62-89606757971</Text>
-            <Text>✉ dwiki1968@gmail.com</Text>
-            <Text>📌 Jakarta, Indonesia</Text>
+            <List spacing={3}>
+              <ListItem>
+                <ListIcon as={FiPhone} color="cyan.500" />
+                +62-89606757971
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FiMail} color="cyan.500" />
+                dwiki1968@gmail.com
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FiMapPin} color="cyan.500" />
+                Jakarta, Indonesia
+              </ListItem>
+            </List>
           </VStack>
           <Spacer />
           <Stack direction={"row"} mb={5}>
-            {sosialMedia.map((sosmed) => (
-              <SocialButton label={sosmed.nama} href={sosmed.link}>
+            {sosialMedia.map((sosmed, index) => (
+              <SocialButton key={index} label={sosmed.nama} href={sosmed.link}>
                 {sosmed.icon}
               </SocialButton>
             ))}
